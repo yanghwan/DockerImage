@@ -55,3 +55,11 @@ root@tmax-22cf9064:~/temp# docker attach 0ced7a4937e3
 root@0ced7a4937e3:/# git version
 git version 2.25.1
 
+
+root@0ced7a4937e3:/# apt-get install net-tools
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following NEW packages will be installed:
+
+
