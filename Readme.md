@@ -98,3 +98,23 @@ b4b4e7fb97cd: Loading layer [==================================================>
 Loaded image: git-ubuntu:v2
 
 
+git config --global user.name "본인 이름"
+git config --global user.email "본인 이메일 주소"
+
+$ git config --local user.name "stunstunstun"
+$ git config --local user.email "wjdsupj@gmail.com"
+
+root@9efa9e37b2fe:/project# pwd
+/project
+root@9efa9e37b2fe:/project# $ git init
+
+
+root@9efa9e37b2fe:/project# git commit -m "first change"
+[master (root-commit) 4a21f37] first change
+ 1 file changed, 2 insertions(+)
+ create mode 100644 license
+root@9efa9e37b2fe:/project# 
+root@9efa9e37b2fe:/project# git status
+On branch master
+nothing to commit, working tree clean
+
