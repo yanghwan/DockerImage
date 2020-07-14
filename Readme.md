@@ -82,4 +82,19 @@ root@tmax-22cf9064:~/temp# docker commit -p ade6606f4d49 git-ubuntu:v2
 sha256:3762ccff5178ce2783f189ab6f2fb5ce4078f971fd9e38d8a8df8d1b6283e0e5
 
 
+root@tmax-22cf9064:~# docker save git-ubuntu:v2 git-ubuntu.tar
+cowardly refusing to save to a terminal. Use the -o flag or redirect
+root@tmax-22cf9064:~# docker save git-ubuntu:v2 -o git-ubuntu.tar
+
+
+[root@s18-3 ~]# docker load --input git-ubuntu.tar
+d22cfd6a8b16: Loading layer [==================================================>]  75.22MB/75.22MB
+132bcd1e0eb5: Loading layer [==================================================>]  1.011MB/1.011MB
+cf0f3facc4a3: Loading layer [==================================================>]  15.36kB/15.36kB
+544a70a875fc: Loading layer [==================================================>]  3.072kB/3.072kB
+18b871b7021a: Loading layer [==================================================>]   22.3MB/22.3MB
+652fb87381de: Loading layer [==================================================>]  104.2MB/104.2MB
+b4b4e7fb97cd: Loading layer [==================================================>]   1.65MB/1.65MB
+Loaded image: git-ubuntu:v2
+
 
