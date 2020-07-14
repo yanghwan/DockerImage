@@ -62,4 +62,17 @@ Building dependency tree
 Reading state information... Done
 The following NEW packages will be installed:
 
+Ctrl + p + q 
+root@ade6606f4d49:/# read escape sequence
+
+root@tmax-22cf9064:~/temp# docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                            NAMES
+ade6606f4d49        git-ubuntu:v1       "/bin/bash"              8 minutes ago       Up 8 minutes                                                         angry_hypatia
+f28ce410da67        sonatype/nexus3     "sh -c ${SONATYPE_DI   3 months ago        Up 3 months         0.0.0.0:5000->5000/tcp, 0.0.0.0:8081->8081/tcp   nexus
+root@tmax-22cf9064:~/temp# 
+root@tmax-22cf9064:~/temp# 
+root@tmax-22cf9064:~/temp# docker commit -p ade6606f4d49 git-ubuntu:v2
+sha256:3762ccff5178ce2783f189ab6f2fb5ce4078f971fd9e38d8a8df8d1b6283e0e5
+
+
 
