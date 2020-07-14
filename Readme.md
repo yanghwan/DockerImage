@@ -23,7 +23,7 @@ https://git-scm.com/book/ko/v2 (공식 Site 한글 매뉴얼))
 
  - 사본을 로컬에서 관리하기 때문에 GIT이 SVN에 비해 훨씬 빠르다.(SVN은 변경 로그 하나 보는 것도 인터넷을 경유해야 한다.)
  
-
+- ![텍스트](https://git-scm.com/book/en/v2/images/lifecycle.png)]
 
 
 
@@ -118,3 +118,7 @@ root@9efa9e37b2fe:/project# git status
 On branch master
 nothing to commit, working tree clean
 
+
+root@9efa9e37b2fe:/project# git config --global --list
+user.email=tmaxanc@tmax.co.kr
+user.name=tmaxanc
