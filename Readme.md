@@ -122,3 +122,29 @@ nothing to commit, working tree clean
 root@9efa9e37b2fe:/project# git config --global --list
 user.email=tmaxanc@tmax.co.kr
 user.name=tmaxanc
+
+
+프로토콜
+Git은 Local, HTTP, SSH, Git 이렇게 네 가지의 프로토콜을 사용할 수 있다. 이 절에서는 각각 어떤 경우에 유용한지 살펴본다.
+
+Local
+$ git clone /srv/git/project.git
+아래처럼도 가능하다:
+$ git clone file:///srv/git/project.git
+
+remote
+$ git remote add local_proj /srv/git/project.git
+
+
+HTTP 프로토콜
+마트 HTTP 프로토콜은 SSH나 Git 프로토콜처럼 통신한다. 다만 HTTP나 HTTPS 포트를 이용해 통신하고 다양한 HTTP 인증 방식을 사용한다는 것이 다르다. SSH는 키를 발급하고 관리해야 하는 번거로움이 있지만, HTTP는 사용자이름과 암호만으로 인증할 수 있기 때문에 더 편리하게 사용할 수 있다.
+
+아마 지금은 Git에서 가장 많이 사용하는 프로토콜일 것이다. git:// 프로토콜처럼 익명으로 사용할 수도 있고, SSH처럼 인증을 거쳐 Push 할 수도 있기 때문이다. 이 두 가지 동작을 다른 URL로 나눌 필요없이 하나의 URL로 통합해서 사용할 수 있다. 그냥 인증기능을 켜놓은 저장소에 Push를 하면 서버는 사용자이름과 암호를 물어본다. 그리고 Fetch나 Pull 같은 읽기 작업에서도 같은 URL을 사용한다.
+
+실제로 GitHub 같은 서비스에서 제공하는 저장소는 Clone을 할 때나 Push를 할 때 같은 URL을 사용한다. (예, https://github.com/schacon/simplegit)
+
+Git 프로토콜
+
+
+
+
